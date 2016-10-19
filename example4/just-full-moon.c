@@ -14,15 +14,11 @@ int main() {
 	started by DBus
 	* Example could be something like 
 	*/
-	FILE *tmp;
-	tmp = fopen("/tmp/just_full_moon.result", "w");
 
-	//if ( dbus_message_is_signal(message,"org.share.linux","StartServiceByName") ) {
-		fprintf(tmp,"'Just full moon' service was started successfully");	
-/*	} else {
-		fprintf(tmp,"share-linux service was started with unknown command");	
-	}
-*/
+	FILE *tmp;
+
+	tmp = fopen("/tmp/just_full_moon.result", "w");
+	fprintf(tmp,"'Just full moon' service was started successfully");	
 	fclose(tmp);
 	
 

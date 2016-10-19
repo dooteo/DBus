@@ -29,13 +29,6 @@ int main() {
 							"org.freedesktop.DBus",
 							"StartServiceByName");
 
-/*
-	message = dbus_message_new_method_call("just.full.moon",
-							"/just/full/moon",
-							"just.full.moon",
-							"StartServiceByName");
-
-*/
 	if ( !message ) {
 
 		printf("Error creating DBus message\n");
